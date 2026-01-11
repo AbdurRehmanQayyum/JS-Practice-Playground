@@ -10,7 +10,7 @@ if (form) {
     const user = username.value;
     const pass = password.value;
 
-    if (user === "admin" && pass === "1234") {
+    if (user !== "" && pass !== "0") {
       localStorage.setItem("loggedIn", "true");
       window.location.href = "dashboard.html";
     } else {
